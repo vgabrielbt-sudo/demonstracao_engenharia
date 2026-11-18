@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contato — Empresa Exemplo</title>
+<meta name="description" content="Solicite um orçamento pelo formulário ou pelo WhatsApp.">
+<meta name="theme-color" content="#0F1214">
+<meta property="og:title" content="Contato — Empresa Exemplo">
+<meta property="og:description" content="Solicite um orçamento pelo formulário ou pelo WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top" id="top"><div class="wrap top-in">
+  <a class="brand" href="index.html" aria-label="Empresa Exemplo, ir ao início"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#fff" stroke-width="4"/><path d="M3 37L37 3" stroke="#E4611B" stroke-width="5"/></svg><span><b>Empresa Exemplo</b><small>ENGENHARIA</small></span></a>
+  <nav id="nav" aria-label="Principal"><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html" class="on" aria-current="page">Contato</a></li></ul></nav>
+  <a class="btn btn-p btn-sm" href="contato.html">Orçamento</a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+</div></header>
+<main>
+
+<section class="phead solo dscope"><div class="ghost" aria-hidden="true" data-d style="--d:-10;--f:.06">CONT</div><div class="wrap phead-in"><div><p class="crumb mono"><a href="index.html">Início</a> <span>/</span> <b>Contato</b></p><h1>Solicite um orçamento</h1><p class="lead">Descreva o que precisa. A gente retorna com os próximos passos.</p></div></div></section>
+<section class="sec contato" aria-label="Contato"><div class="wrap ct-grid">
+  <div class="ct-info" data-rv>
+    <p>Prefere falar direto? Chame no WhatsApp ou use o formulário ao lado.</p>
+    <a class="btn wa" id="waBtn" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4.2A8.5 8.5 0 1 1 8.3 18.7z"/><path d="M9 9.5c.4 2.2 2.3 4 4.5 4.5l1.2-1.2-1.8-.9-.8.8c-.9-.4-1.7-1.2-2.100-2.100l.8-.8-.9-1.800z" fill="currentColor" stroke="none"/></svg>Atendimento pelo WhatsApp</a>
+    <dl class="clist"><div><dt>Telefone</dt><dd>(00) 0000-0000</dd></div><div><dt>WhatsApp</dt><dd>(00) 00000-0000</dd></div><div><dt>E-mail</dt><dd>contato@exemplo.com.br</dd></div><div><dt>Endereço</dt><dd>Endereço da empresa, Cidade/UF</dd></div><div><dt>Horário</dt><dd>Segunda a sexta, horário comercial</dd></div></dl>
+    <div class="map" id="map" role="img" aria-label="Mapa ilustrativo da localização"><a class="mono" id="mapLink" href="#" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
+  </div>
+  <form class="form" id="form" novalidate data-rv>
+    <h2>Pedido de orçamento</h2><p class="sub">Campos com * são obrigatórios.</p>
+    <div class="fgrid">
+      <div class="fld"><label for="f-nome">Nome *</label><input id="f-nome" autocomplete="name" required><span class="err" id="e-nome"></span></div>
+      <div class="fld"><label for="f-tel">WhatsApp / telefone *</label><input id="f-tel" type="tel" inputmode="tel" autocomplete="tel" required><span class="err" id="e-tel"></span></div>
+      <div class="fld"><label for="f-email">E-mail</label><input id="f-email" type="email" autocomplete="email"><span class="err" id="e-email"></span></div>
+      <div class="fld"><label for="f-tipo">Do que você precisa?</label><select id="f-tipo"></select></div>
+      <div class="fld full"><label for="f-local">Local da obra (cidade / bairro)</label><input id="f-local" autocomplete="address-level2"></div>
+      <div class="fld full"><label for="f-msg">Mensagem *</label><textarea id="f-msg" placeholder="Conte em poucas linhas o que precisa, metragem aproximada e prazo desejado."></textarea><span class="err" id="e-msg"></span></div>
+      <div class="fld full"><label class="chk"><input type="checkbox" id="f-ok"><span>Concordo em ser contatado sobre este pedido. Os dados são usados apenas para retorno do orçamento.</span></label><span class="err" id="e-ok"></span></div>
+    </div>
+    <button class="btn btn-p" type="submit">Preparar pedido <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></button>
+    <div class="result" id="result" hidden aria-live="polite"><strong>Pedido pronto para envio</strong><pre id="resPre"></pre><div class="row"><a class="btn btn-p btn-sm" id="resWa" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a><button class="btn btn-o btn-sm" type="button" id="resCopy">Copiar mensagem</button></div><small>O pedido só é enviado quando você toca em "Enviar pelo WhatsApp". Este site não guarda as informações digitadas.</small></div>
+  </form>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div class="foot-grid">
+    <div><a class="brand" href="index.html" style="margin-bottom:16px"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#fff" stroke-width="4"/><path d="M3 37L37 3" stroke="#E4611B" stroke-width="5"/></svg><span><b>Empresa Exemplo</b><small>ENGENHARIA</small></span></a><p style="max-width:24rem">Site de demonstração. Todo o conteúdo é ilustrativo e será substituído pelos dados reais da empresa.</p></div>
+    <div><h4>Páginas</h4><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+    <div><h4>Contato</h4><ul><li>(00) 0000-0000</li><li>contato@exemplo.com.br</li><li>Endereço da empresa, Cidade/UF</li></ul></div>
+  </div>
+  <div class="legal"><span>© <span id="yr"></span> Empresa Exemplo</span><span>CNPJ 00.000.000/0000-00</span><a href="#top">Voltar ao topo ↑</a></div>
+</div></footer>
+<script src="js/data.js"></script><script src="js/scenes.js"></script><script src="js/app.js"></script>
+</body>
+</html>
