@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Serviços — Empresa Exemplo</title>
-<meta name="description" content="Conheça os serviços de engenharia oferecidos.">
+<meta name="description" content="Serviços de engenharia industrial e civil, explicados em corte técnico.">
 <meta name="theme-color" content="#0F1214">
 <meta property="og:title" content="Serviços — Empresa Exemplo">
-<meta property="og:description" content="Conheça os serviços de engenharia oferecidos.">
+<meta property="og:description" content="Serviços de engenharia industrial e civil, explicados em corte técnico.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +23,20 @@
 </div></header>
 <main>
 
-<section class="phead solo dscope"><div class="ghost" aria-hidden="true" data-d style="--d:-10;--f:.06">SERV</div><div class="wrap phead-in"><div><p class="crumb mono"><a href="index.html">Início</a> <span>/</span> <b>Serviços</b></p><h1>O que fazemos</h1><p class="lead">Role para percorrer os serviços. Cada um tem sua própria página.</p></div></div></section>
-<section class="sec" style="background:var(--ink)" aria-label="Lista de serviços"><div class="wrap svx">
-  <div class="svx-vis" aria-hidden="true"><div class="ring"></div><div class="disc"><div class="sv-scene" data-scene="crane"></div><div class="sv-scene" data-scene="frame"></div><div class="sv-scene" data-scene="bridge"></div><div class="sv-scene" data-scene="plant"></div></div><p class="svx-lbl mono"><span id="svxLbl">Serviço 1</span><span>Ilustração</span></p></div>
-  <div class="svx-blocks"><article data-name="Serviço 1"><div class="svx-inline" data-scene="crane" aria-hidden="true"></div><p class="k mono">Serviço 01</p><h2>Serviço 1</h2><p>Texto demonstrativo sobre o primeiro serviço. Aqui entra a explicação real do que é feito, em que tipo de obra se aplica e o que o cliente recebe.</p><dl><div><dt>Para quem</dt><dd>Perfil de cliente atendido por este serviço.</dd></div></dl><div class="cta-row"><a class="btn btn-p" href="servico-1.html">Ver detalhes <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></a><a class="btn btn-o" href="contato.html?servico=1">Orçar</a></div></article><article data-name="Serviço 2"><div class="svx-inline" data-scene="frame" aria-hidden="true"></div><p class="k mono">Serviço 02</p><h2>Serviço 2</h2><p>Texto demonstrativo sobre o segundo serviço. Aqui entra a explicação real do que é feito, em que tipo de obra se aplica e o que o cliente recebe.</p><dl><div><dt>Para quem</dt><dd>Perfil de cliente atendido por este serviço.</dd></div></dl><div class="cta-row"><a class="btn btn-p" href="servico-2.html">Ver detalhes <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></a><a class="btn btn-o" href="contato.html?servico=2">Orçar</a></div></article><article data-name="Serviço 3"><div class="svx-inline" data-scene="bridge" aria-hidden="true"></div><p class="k mono">Serviço 03</p><h2>Serviço 3</h2><p>Texto demonstrativo sobre o terceiro serviço. Aqui entra a explicação real do que é feito, em que tipo de obra se aplica e o que o cliente recebe.</p><dl><div><dt>Para quem</dt><dd>Perfil de cliente atendido por este serviço.</dd></div></dl><div class="cta-row"><a class="btn btn-p" href="servico-3.html">Ver detalhes <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></a><a class="btn btn-o" href="contato.html?servico=3">Orçar</a></div></article><article data-name="Serviço 4"><div class="svx-inline" data-scene="plant" aria-hidden="true"></div><p class="k mono">Serviço 04</p><h2>Serviço 4</h2><p>Texto demonstrativo sobre o quarto serviço. Aqui entra a explicação real do que é feito, em que tipo de obra se aplica e o que o cliente recebe.</p><dl><div><dt>Para quem</dt><dd>Perfil de cliente atendido por este serviço.</dd></div></dl><div class="cta-row"><a class="btn btn-p" href="servico-4.html">Ver detalhes <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></a><a class="btn btn-o" href="contato.html?servico=4">Orçar</a></div></article></div>
+<section class="phead paper dscope"><div class="ghost" aria-hidden="true" data-d style="--d:-10;--f:.06">SERV</div><div class="wrap phead-in"><p class="crumb mono"><a href="index.html">Início</a> <span>/</span> <b>Serviços</b></p><h1>O que fazemos</h1><p class="lead">Escolha um serviço e passe o mouse sobre as camadas do corte para ver o material e a função de cada uma.</p></div></section>
+<section class="sec" style="background:var(--ink)" aria-label="Serviços"><div class="wrap svc">
+  <div class="svc-tabs" id="svcTabs" role="tablist" aria-label="Serviços"></div>
+  <div class="svc-main">
+    <div class="svc-draw"><div class="cutwrap" id="svcHost"></div></div>
+    <div class="svc-info"><h2 id="svcName"></h2><p id="svcDesc"></p><p class="ref mono" id="svcRef"></p><ul class="layers" id="layers" aria-label="Camadas do corte"></ul></div>
+  </div>
 </div></section>
-<section class="cta" aria-label="Chamada para orçamento"><div class="ghost" aria-hidden="true">ORÇ</div><div class="wrap cta-in"><div><h2>Não achou o que procura?</h2><p>Conte o que precisa. A gente avalia e responde.</p></div><a class="btn btn-k" href="contato.html">Solicitar orçamento <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></a></div></section>
+<section class="stampsec" aria-label="Contato"><div class="wrap"><div class="stamp"><div class="st-main"><h2>Não achou o que procura?</h2><p>Conte o que precisa. A gente avalia e responde.</p><a class="tlink" href="contato.html">Solicitar orçamento <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5"/></svg></a></div>
+  <dl class="st-cells"><div><dt>Telefone</dt><dd>(00) 0000-0000</dd></div><div><dt>E-mail</dt><dd>contato@exemplo.com.br</dd></div><div><dt>Endereço</dt><dd>Endereço da empresa, Cidade/UF</dd></div><div><dt>Horário</dt><dd>Segunda a sexta, horário comercial</dd></div></dl></div></div></section>
 </main>
 <footer class="foot"><div class="wrap">
   <div class="foot-grid">
-    <div><a class="brand" href="index.html" style="margin-bottom:16px"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#fff" stroke-width="4"/><path d="M3 37L37 3" stroke="#E4611B" stroke-width="5"/></svg><span><b>Empresa Exemplo</b><small>ENGENHARIA</small></span></a><p style="max-width:24rem">Site de demonstração. Todo o conteúdo é ilustrativo e será substituído pelos dados reais da empresa.</p></div>
+    <div><a class="brand" href="index.html" style="margin-bottom:16px"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#fff" stroke-width="4"/><path d="M3 37L37 3" stroke="#E4611B" stroke-width="5"/></svg><span><b>Empresa Exemplo</b><small>ENGENHARIA</small></span></a><p style="max-width:24rem">Site de demonstração. O conteúdo é ilustrativo e será substituído pelos dados reais da empresa.</p></div>
     <div><h4>Páginas</h4><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html">Contato</a></li></ul></div>
     <div><h4>Contato</h4><ul><li>(00) 0000-0000</li><li>contato@exemplo.com.br</li><li>Endereço da empresa, Cidade/UF</li></ul></div>
   </div>
